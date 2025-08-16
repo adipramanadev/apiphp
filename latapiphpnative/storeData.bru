@@ -1,0 +1,31 @@
+meta {
+  name: storeData
+  type: http
+  seq: 2
+}
+
+post {
+  url: localhost/apiphp/add.php
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "item_code":"222",
+    "item_name":"Komputer", 
+    "price": 2000,
+    "stock": 20
+  }
+}
+
+body:multipart-form {
+  item_code: 213123123
+  item_name: coba coba
+  price: 2000
+  stock: 30
+}
+
+settings {
+  encodeUrl: true
+}
