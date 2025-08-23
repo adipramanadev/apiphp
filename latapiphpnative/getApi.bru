@@ -5,9 +5,17 @@ meta {
 }
 
 get {
-  url: https://fakestoreapi.com/products'
-  body: none
+  url: localhost/apiphp/getdata.php
+  body: formUrlEncoded
   auth: inherit
+}
+
+body:form-urlencoded {
+  : 
+}
+
+body:multipart-form {
+  : @file()
 }
 
 settings {
